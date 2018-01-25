@@ -6,3 +6,8 @@
 
 #### By Brilliant Kaimba briegrant416@gmail.com
 
+## Description
+
+   This is an application that helps to list and preview news articles from various sources.
+
+
