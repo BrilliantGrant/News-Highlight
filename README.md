@@ -25,7 +25,7 @@
 
 
 ## Technologies Used
-
+The technologies used to design this application of News Highlights are
   *	Python3.6
   * Flask framework
   * Bootstrap
