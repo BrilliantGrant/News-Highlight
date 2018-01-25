@@ -1,6 +1,6 @@
 #  News Highlights
 
-  This project was generated with python 3.6
+  This project was generated with python 3.6 Flask framework
 
   News Highlights is an application that helps to list and preview news articles from various sources.
 
