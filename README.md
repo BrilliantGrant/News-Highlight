@@ -16,6 +16,15 @@
 
 
 ## Installation Requirements
+* install Flask
+   $ python3.6 -m pip install flask
+* Install  python version 3.6
+* Install gunicorn:
+   (virtual)$ python3.6 -m  pip install gunicorn
+* Install Heroku cli that helps to deploy your application. 
+* Atleast have a computer or a laptop
+* Have an internet connection
+* Visit 
 
 
 ## Known Bugs
@@ -29,6 +38,7 @@ The technologies used to design this application of News Highlights are
   *	Python3.6
   * Flask framework
   * Bootstrap
+  * News Api
 
 
 ### License
