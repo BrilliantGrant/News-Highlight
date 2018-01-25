@@ -13,15 +13,16 @@
    This is an application that helps to list and preview news articles from various sources.
 
 ## User Story
-
-
-
-## Speifications
 A user should be able to:
 * See various news sources and select the ones they prefer
 * See all the news articles from that news source
 * See the image description and time the news article was created.
 * Click on an article and read it fully from the news source.
+
+
+
+## Speifications
+
 
 
 
