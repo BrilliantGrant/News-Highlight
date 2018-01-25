@@ -24,6 +24,10 @@
 
 ## Technologies Used
 
+  *	Python3.6
+  * Flask framework
+  * Bootstrap
+
 
 ### License
 
