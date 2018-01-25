@@ -2,7 +2,7 @@
 
   This project was generated with python 3.6
 
-  It is an application that helps to list and preview news articles from various sources.
+  News Highlights is an application that helps to list and preview news articles from various sources.
 
 #### 26th January 2018
 
