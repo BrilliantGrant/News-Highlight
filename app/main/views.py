@@ -1,24 +1,20 @@
-from flask import render_template,request
-from app import app
+from flask import render_template, request, redirect, url_for
 from . import main
+from ..requests import get_sources, get_articles
 
-#views
+
 @main.route('/')
 def index():
+    """View root page function that returns index page and the various news sources"""
+    title = 'Home- Welcome to the best News source page'
+    # Getting the news sources
+    news_sources = get_sources('sources')
+    return render_template('index.html', title=title, news_sources=news_sources)
 
-	'''
-	view root page function that returns the index page and its data
-	'''
-	 title = 'Home - Welcome to The best News Highlights Website Online'
-	news_sources = get_sources('sources')
-    return render_template('index.html', title=title, sources=news_sources)
 
-@main.route('/articles/<int:source_id>')
-def articles(source_id):
-	'''
-	view source page function that returns the news details page and its data
-	'''
-	title = f"{source_id} page"
-    #title = "Hello"
-    articles = get_articles(source_id)
-    return render_template('articles.html',title = title, articles = articles)
+@main.route('/articles/<source_id>')
+def source(source_id):
+    """View for top story articles"""
+    # articles = get_articles('articles')
+    source_and_articles = get_articles(source_id)
+    return render_template('articles.html', source_and_articles=source_and_articles)

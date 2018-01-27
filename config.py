@@ -1,28 +1,27 @@
+import os
+
+
 class Config:
-    '''
-    General configuration parent class
-    '''
+    """Main configurations class"""
+
     NEWS_API_KEY='2346cad2c3b344c8adc0026455aa8bd4'
-    NEWS_API_BASE_URL='https://newsapi.org/v1/sources/'
-    SECRET_KEY='12345'
+    NEWS_API_BASE_URL='https://newsapi.org/v2/sources/'
+
+
+
 
 
 class ProdConfig(Config):
-    '''
-    Production  configuration child class
-
-    Args:
-        Config: The parent configuration class with General configuration settings
-    '''
+    """Production configuration class that inherits from the main configurations class"""
     pass
 
 
 class DevConfig(Config):
-    '''
-    Development  configuration child class
-
-    Args:
-        Config: The parent configuration class with General configuration settings
-    '''
-
+    """Configuration class for development stage of the app"""
     DEBUG = True
+
+
+config_options = {
+    'development': DevConfig,
+    'production': ProdConfig
+}
