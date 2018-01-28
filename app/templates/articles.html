@@ -1,16 +1,16 @@
-<!DOCTYPE html>
 {% extends 'base.html'%}
 {% import 'macros.html' as macro%}
 
 
 {% block content %}
+<div class="container" style=";background-color:#03142B; margin-bottom:50px">
+</div>
 
-    <div class="container">
+    <div class="container" style="">
       <div class="row">
-        <ul>
-            {{ macro.displayArticleList(articles)}}
-        </ul>
+          {{ macro.displayArticles(source_and_articles)}}
       </div>
+
     </div>
 
 {% endblock %}
